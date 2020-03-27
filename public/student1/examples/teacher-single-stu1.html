@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <title>
+    View Data
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- Nucleo Icons -->
+  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="../assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet">
+
+
+
+
+
+</head>
+
+<body class="">
+  <div class="wrapper">
+    <div class="sidebar">
+     <div class="sidebar-wrapper">
+        <div class="logo">
+          <a href="javascript:void(0)" class="simple-text logo-mini">
+            AMS
+          </a>
+          <a href="javascript:void(0)" class="simple-text logo-normal">
+             Upload Data
+          </a>
+        </div>
+        <ul class="nav">
+          <li class=" ">
+            <a href="./teacher-dashboard.html">
+              <i class="tim-icons icon-chart-pie-36"></i>
+              <p>Take Attendance</p>
+            </a>
+          </li>
+          <li class="">
+            <a href="teacher-upload-data.html">
+              <i class="tim-icons icon-cloud-upload-94"></i>
+              <p>Upload Student data</p>
+            </a>
+          </li>
+          <li class="active">
+            <a href="./teacher-view-data.html">
+              <i class="tim-icons icon-chart-bar-32"></i>
+              <p>View Student data</p>
+            </a>
+          </li>
+          <li>
+            <a href="index1.html">
+              <i class="tim-icons icon-bank"></i>
+              <p>Home</p>
+            </a>
+          </li>
+          <li>
+            <a href="./teacher-notifications.html">
+              <i class="tim-icons icon-bell-55"></i>
+              <p>Notice</p>
+            </a>
+          </li>
+          <li>
+            <a href="./teacher-tables.html">
+              <i class="tim-icons icon-single-copy-04"></i>
+              <p>Time-Tables</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="tim-icons icon-align-center"></i>
+              <p>Unit Results</p>
+            </a>
+          </li>
+          <li>
+            <a href="./teacher-user.html">
+              <i class="tim-icons icon-single-02"></i>
+              <p>User Profile</p>
+            </a>
+          </li>
+          
+         
+          
+          <li>
+            <a href="index1.html">
+              <i class="tim-icons icon-minimal-left"></i>
+              <p>Logout</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent mt-4">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle d-inline">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand" href="javascript:void(0)">Teacher Name</a>
+          </div>
+
+        </div>
+      </nav>
+
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="row">
+          <div class="col-12">
+            <div class="card card-chart">
+              <div class="card-header ">
+                <div class="row">
+                  <div class="col-sm-6 text-left">
+                    <h5 class="card-category">Total Attendance</h5>
+                    <h2 class="card-title">Performance</h2>
+                  </div>
+
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="chart-area">
+                  <canvas id="CountryChart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="card card-chart " style="height: 25pc;">
+              <div class="card-header ">
+                <div class="row">
+                  <div class="col-sm-6 text-left">
+                    <h5 class="card-category"></h5>
+                    <h2 class="card-title">Artificial Intelligence</h2>
+                  </div>
+
+                </div>
+              </div>
+              <div class="card-body pl-2">
+                <div class="chart-area">
+
+                  <div class="row pl-2">
+                    <div class="col-md-9 col-7 pr-1">
+                      <p><strong>Last Month :</strong></p>
+                      <div class="progress mt-4 mb-3">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                          aria-valuemax="100">25</div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mt-2 mb-1 col-1 pl-2">
+                      <div class="card-footer">
+                        <button type="submit" class="btn btn-fill btn-primary" style="width: auto; padding-left: 0.6cm; padding-right: 0.6cm;">Excel</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row pl-2">
+                    <div class="col-md-9 col-7 pr-1">
+                      <p><strong>Last Week :</strong></p>
+                      <div class="progress mt-4 mb-3 ">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                          aria-valuemax="100">50</div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 mt-2 mb-1 col-1 pl-2">
+                      <div class="card-footer">
+                        <button type="submit" class="btn btn-fill btn-primary" style="width: auto; padding-left: 0.6cm; padding-right: 0.6cm;">Excel</button>
+                      </div>
+                    </div>
+
+                  </div>
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/jquery.min.js"></script>
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <!--  Google Maps Plugin    -->
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+    <!-- Chart JS -->
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+    <!--  Notifications Plugin    -->
+    <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+    <!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="../assets/js/black-dashboard.min.js?v=1.0.0"></script>
+    <!-- Black Dashboard DEMO methods, don't include it in your project! -->
+    <script src="../assets/demo/demo.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Javascript method's body can be found in assets/js/demos.js
+        demo.initDashboardPageCharts();
+
+      });
+      var delay = 500;
+      $(".progress-bar").each(function (i) {
+        $(this).delay(delay * i).animate({ width: $(this).attr('aria-valuenow') + '%' }, delay);
+
+        $(this).prop('Counter', 0).animate({
+          Counter: $(this).text()
+        }, {
+          duration: delay,
+          easing: 'swing',
+          step: function (now) {
+            $(this).text(Math.ceil(now) + '%');
+          }
+        });
+      });
+
+    </script>
+
+    <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+    <script>
+      window.TrackJS &&
+        TrackJS.install({
+          token: "ee6fab19c5a04ac1a32a645abde4613a",
+          application: "black-dashboard-free"
+        });
+    </script>
+</body>
+
+</html>

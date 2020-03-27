@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <title>
+     View Data
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- Nucleo Icons -->
+  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="../assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+<body class="">
+  <div class="wrapper">
+    <div class="sidebar">
+     <div class="sidebar-wrapper">
+        <div class="logo">
+          <a href="javascript:void(0)" class="simple-text logo-mini">
+            AMS
+          </a>
+          <a href="javascript:void(0)" class="simple-text logo-normal">
+             View Data
+          </a>
+        </div>
+        <ul class="nav">
+          <li class=" ">
+            <a href="./teacher-dashboard.html">
+              <i class="tim-icons icon-chart-pie-36"></i>
+              <p>Take Attendance</p>
+            </a>
+          </li>
+          <li class="">
+            <a href="teacher-upload-data.html">
+              <i class="tim-icons icon-cloud-upload-94"></i>
+              <p>Upload Student data</p>
+            </a>
+          </li>
+          <li class="active">
+            <a href="./teacher-view-data.html">
+              <i class="tim-icons icon-chart-bar-32"></i>
+              <p>View Student data</p>
+            </a>
+          </li>
+          <li>
+            <a href="index1.html">
+              <i class="tim-icons icon-bank"></i>
+              <p>Home</p>
+            </a>
+          </li>
+          <li>
+            <a href="./teacher-notifications.html">
+              <i class="tim-icons icon-bell-55"></i>
+              <p>Notice</p>
+            </a>
+          </li>
+          <li>
+            <a href="./teacher-tables.html">
+              <i class="tim-icons icon-single-copy-04"></i>
+              <p>Time-Tables</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="tim-icons icon-align-center"></i>
+              <p>Unit Results</p>
+            </a>
+          </li>
+          <li>
+            <a href="./teacher-user.html">
+              <i class="tim-icons icon-single-02"></i>
+              <p>User Profile</p>
+            </a>
+          </li>
+          
+         
+          
+          <li>
+            <a href="index1.html">
+              <i class="tim-icons icon-minimal-left"></i>
+              <p>Logout</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent mt-4">
+        <div class="container-fluid">
+          <div class="navbar-wrapper ">
+            <div class="navbar-toggle d-inline">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand" href="javascript:void(0)">Teacher Name</a>
+          </div>
+         </div>
+      </nav>
+     
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <!-- <h5 class="title">Edit Profile</h5> -->
+              </div>
+              <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="col-md-5 pr-md-1">
+                      <div class="form-group">
+                        <label>Branch:</label>
+                        <select class="form-control" style="background-color: #303042 ;" id="selectField1">
+                          <option value="option1">Select Branch</option>
+                          <option value="option2">Computer Science Engg</option>
+                          <option value="option3">Electronics and Telecommunications Engg</option>
+                          <option value="option4">Civil Engg</option>
+                          <option value="option5">Mechanical Engg</option>
+                          <option value="option6">Electrical Engg</option>
+
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3 px-md-1">
+                      <div class="form-group">
+                        <label>Semester:</label>
+                        <select class="form-control" id="selectField2" style="background-color: #303042;">
+                          <option>Select Semester</option>
+                          <option value="option7">Semester 1</option>
+                          <option value="option8">Semester 2</option>
+                          <option value="option9">Semester 3</option>
+                          <option value="option10">Semester 4</option>
+                          <option value="option11">Semester 5</option>
+                          <option value="option12">Semester 6</option>
+                          <option value="option13">Semester 7</option>
+                          <option value="option14">Semester 8</option>
+
+                        </select>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                </form>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="card boxy" id="option2option7">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card-header">
+                            <h4 class="card-title"> Branch: Computer Science & Engg</h4>
+                            <h4 class="card-title"> Semester: 1</h4>
+                        </div>
+                    </div> 
+                </div> 
+                
+                <div class="card-body pl-4">
+                    <div class="table-responsive">
+                        <table class="table tablesorter " id="">
+                            <thead class=" text-primary">
+                                <tr>
+                                    <th>
+                                        Roll . No
+                                    </th>
+                                    <th>
+                                        Name
+                                    </th>
+                                    <th>
+                                        Email-Id
+                                    </th>
+                                    <th class="text-center">
+                                        Mobile.No
+                                    </th>
+                                   
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr data-href="teacher-single-stu.html">
+                                    <td>
+                                        Dakota Rice
+                                    </td>
+                                    <td>
+                                        Niger
+                                    </td>
+                                    <td>
+                                        Oud-Turnhout
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <span class="form-check-sign">
+                                                    <span class="check"></span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Minerva Hooper
+                                    </td>
+                                    <td>
+                                        Curaçao
+                                    </td>
+                                    <td>
+                                        Sinaai-Waas
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <span class="form-check-sign">
+                                                    <span class="check"></span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Sage Rodriguez
+                                    </td>
+                                    <td>
+                                        Netherlands
+                                    </td>
+                                    <td>
+                                        Baileux
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <span class="form-check-sign">
+                                                    <span class="check"></span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Philip Chaney
+                                    </td>
+                                    <td>
+                                        Korea, South
+                                    </td>
+                                    <td>
+                                        Overland Park
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <span class="form-check-sign">
+                                                    <span class="check"></span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Doris Greene
+                                    </td>
+                                    <td>
+                                        Malawi
+                                    </td>
+                                    <td>
+                                        Feldkirchen in Kärnten
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <span class="form-check-sign">
+                                                    <span class="check"></span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mason Porter
+                                    </td>
+                                    <td>
+                                        Chile
+                                    </td>
+                                    <td>
+                                        Gloucester
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <span class="form-check-sign">
+                                                    <span class="check"></span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Jon Porter
+                                    </td>
+                                    <td>
+                                        Portugal
+                                    </td>
+                                    <td>
+                                        Gloucester
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                                <span class="form-check-sign">
+                                                    <span class="check"></span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                          
+                    </div>
+                </div>
+            
+                <div class="row ml-auto pr-4">
+                    <div class="col pr-md-1 ">
+                      <div class="form-group">
+                        <div class="card-footer">
+                            <a href="#">
+                               
+                                <button type="submit" class="btn btn-fill btn-primary" style="width: 7pc; padding:3px;  height: 3pc;"><i class="tim-icons icon-pencil mb-1"></i>&nbsp;Excel Sheet</button>
+                            </a>
+                         
+                        </div>
+                      </div>
+                    </div>                                   
+                    
+                    
+                </div>
+            </div>
+            <div class="card boxy" id="option2option12">
+              <div class="row">
+                  <div class="col-sm-6">
+                      <div class="card-header">
+                          <h4 class="card-title"> Branch: Computer Science & Engg</h4>
+                          <h4 class="card-title"> Semester: 6</h4>
+                      </div>
+                  </div> 
+              </div> 
+              
+              <div class="card-body pl-4">
+                  <div class="table-responsive">
+                      <table class="table tablesorter " id="">
+                          <thead class=" text-primary">
+                              <tr>
+                                  <th>
+                                      Roll . No
+                                  </th>
+                                  <th>
+                                      Name
+                                  </th>
+                                  <th>
+                                      Email-Id
+                                  </th>
+                                  <th class="text-center">
+                                      Mobile.No
+                                  </th>
+                                 
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr data-href="teacher-single-stu.html">
+                                  <td>
+                                      Dakota Rice
+                                  </td>
+                                  <td>
+                                      Niger
+                                  </td>
+                                  <td>
+                                      Oud-Turnhout
+                                  </td>
+                                  <td class="text-center">
+                                      <div class="form-check">
+                                          <label class="form-check-label">
+                                              <input class="form-check-input" type="checkbox" value="">
+                                              <span class="form-check-sign">
+                                                  <span class="check"></span>
+                                              </span>
+                                          </label>
+                                      </div>
+                                  </td>
+                                 
+                              </tr>
+                              <tr>
+                                  <td>
+                                      Minerva Hooper
+                                  </td>
+                                  <td>
+                                      Curaçao
+                                  </td>
+                                  <td>
+                                      Sinaai-Waas
+                                  </td>
+                                  <td class="text-center">
+                                      <div class="form-check">
+                                          <label class="form-check-label">
+                                              <input class="form-check-input" type="checkbox" value="">
+                                              <span class="form-check-sign">
+                                                  <span class="check"></span>
+                                              </span>
+                                          </label>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      Sage Rodriguez
+                                  </td>
+                                  <td>
+                                      Netherlands
+                                  </td>
+                                  <td>
+                                      Baileux
+                                  </td>
+                                  <td class="text-center">
+                                      <div class="form-check">
+                                          <label class="form-check-label">
+                                              <input class="form-check-input" type="checkbox" value="">
+                                              <span class="form-check-sign">
+                                                  <span class="check"></span>
+                                              </span>
+                                          </label>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      Philip Chaney
+                                  </td>
+                                  <td>
+                                      Korea, South
+                                  </td>
+                                  <td>
+                                      Overland Park
+                                  </td>
+                                  <td class="text-center">
+                                      <div class="form-check">
+                                          <label class="form-check-label">
+                                              <input class="form-check-input" type="checkbox" value="">
+                                              <span class="form-check-sign">
+                                                  <span class="check"></span>
+                                              </span>
+                                          </label>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      Doris Greene
+                                  </td>
+                                  <td>
+                                      Malawi
+                                  </td>
+                                  <td>
+                                      Feldkirchen in Kärnten
+                                  </td>
+                                  <td class="text-center">
+                                      <div class="form-check">
+                                          <label class="form-check-label">
+                                              <input class="form-check-input" type="checkbox" value="">
+                                              <span class="form-check-sign">
+                                                  <span class="check"></span>
+                                              </span>
+                                          </label>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      Mason Porter
+                                  </td>
+                                  <td>
+                                      Chile
+                                  </td>
+                                  <td>
+                                      Gloucester
+                                  </td>
+                                  <td class="text-center">
+                                      <div class="form-check">
+                                          <label class="form-check-label">
+                                              <input class="form-check-input" type="checkbox" value="">
+                                              <span class="form-check-sign">
+                                                  <span class="check"></span>
+                                              </span>
+                                          </label>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      Jon Porter
+                                  </td>
+                                  <td>
+                                      Portugal
+                                  </td>
+                                  <td>
+                                      Gloucester
+                                  </td>
+                                  <td class="text-center">
+                                      <div class="form-check">
+                                          <label class="form-check-label">
+                                              <input class="form-check-input" type="checkbox" value="">
+                                              <span class="form-check-sign">
+                                                  <span class="check"></span>
+                                              </span>
+                                          </label>
+                                      </div>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      
+                      
+                        
+                  </div>
+              </div>
+          
+              <div class="row ml-auto pr-4">
+                  <div class="col pr-md-1 ">
+                    <div class="form-group">
+                      <div class="card-footer">
+                          <a href="#">
+                             
+                              <button type="submit" class="btn btn-fill btn-primary" style="width: 7pc; padding:3px;  height: 3pc;"><i class="tim-icons icon-pencil mb-1"></i>&nbsp;Excel Sheet</button>
+                          </a>
+                       
+                      </div>
+                    </div>
+                  </div>                                   
+                  
+                  
+              </div>
+          </div>
+            
+        </div>
+        
+    </div>
+    
+</div>
+        </div>
+       
+        
+      </div>
+      
+    </div>
+  </div>
+  
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!--  Google Maps Plugin    -->
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Chart JS -->
+  <script src="../assets/js/plugins/chartjs.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/black-dashboard.min.js?v=1.0.0"></script><!-- Black Dashboard DEMO methods, don't include it in your project! -->
+  <script src="../assets/demo/demo.js"></script>
+  <script>
+    $(document).ready(function() {
+      $().ready(function() {
+                  // we simulate the window Resize so the charts will get updated in realtime.
+          var simulateWindowResize = setInterval(function() {
+            window.dispatchEvent(new Event('resize'));
+          }, 180);
+
+          // we stop the simulation of Window Resize after the animations are completed
+          setTimeout(function() {
+            clearInterval(simulateWindowResize);
+          }, 1000);
+        });
+
+        
+    });
+    $('*[data-href]').on("click",function(){
+  window.location = $(this).data('href');
+  return false;
+});
+$("td > a").on("click",function(e){
+  e.stopPropagation();
+});
+  </script>
+  <script>
+    $(document).ready(function() {
+      // Javascript method's body can be found in assets/js/demos.js
+      demo.initDashboardPageCharts();
+
+    });
+  </script>
+  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+  <script>
+    window.TrackJS &&
+      TrackJS.install({
+        token: "ee6fab19c5a04ac1a32a645abde4613a",
+        application: "black-dashboard-free"
+      });
+  </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.boxy').hide();
+      $('#option1option3').show();
+      $("#selectField1, #selectField2").on("change", function () {
+        $('.boxy').hide();
+        $('#' + $('#selectField1').val() + $('#selectField2').val()).show();
+      });
+    });
+  </script>
+</body>
+
+</html>
